@@ -1,5 +1,7 @@
 # paypal-cointracker-integration
 
+The motivation behind this program: practice Python coding concepts, learn functionality of Github, and more importantly, I needed my PayPal crypto transactions uploaded into CoinTracker! 
+
 As of 10/13/22, a seamless wallet integration for Paypal-to-CoinTracker is not available. At best, you would need to download your transactions from PayPal, reformat the CSV file, and upload into CoinTracker.
 
 Thankfully, CoinTracker provides the following steps to integrate your PayPal wallet
