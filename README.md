@@ -7,5 +7,5 @@ Thankfully, CoinTracker provides the following steps to integrate your PayPal wa
 2. Reformat the CSV file
 3. Import the file into CoinTracker
 
-This link, https://community.cointracker.io/t/convert-any-csv-into-the-cointracker-csv-format/553, provides a video walkthrough on how to properly convert any CSV file into a CoinTracker approved format.
+This [link](https://community.cointracker.io/t/convert-any-csv-into-the-cointracker-csv-format/553) provides a video walkthrough on how to properly convert any CSV file into a CoinTracker approved format.
 
