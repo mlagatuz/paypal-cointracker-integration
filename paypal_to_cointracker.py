@@ -25,9 +25,6 @@ class Transactions_Integration:
         # Insert 'Tag' header at the end
         self.transaction_table.insert(len(self.transaction_table.columns), 'Tag', ['']*(len(self.transaction_table)))
 
-    #def read_csv(self, file_path) -> pd.DataFrame:
-    #    return pd.read_csv(file_path)
-
     def read_csv(self, file_path, header=0) -> None:
         self.transaction_table = pd.read_csv(file_path, header=header)
 
