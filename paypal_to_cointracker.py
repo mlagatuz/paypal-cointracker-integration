@@ -6,7 +6,7 @@ class Transactions_Integration:
         self.transaction_table = transaction_table
 
     #def transformation_csv(self) -> None:
-
+    
     #def format_time(self) -> None:
 
     def format_headers(self) -> None:
