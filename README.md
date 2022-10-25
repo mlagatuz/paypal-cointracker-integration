@@ -19,10 +19,18 @@ This [link](https://community.cointracker.io/t/convert-any-csv-into-the-cointrac
 
 I'm using this exercise to help me with practice Data Structures and Algorithms (DSA's), coding in Python, and working a project end-to-end. I grabbed my whiteboard and came up with this algorithm:
 
-*Algorithm*
+***Overall algorithm***
 1. Ingest entire CSV
 2. format_headers
 <br>
+
+***format_headers algorithm***
+- Drop first row (Paypal inserts disclaimer)
+- Format Time
+- Drop "Transaction Type" column
+- Format Headers
+- Drop "Market Value" column
+
 
 ## Notes for myself
 *PayPal CSV headers:* <br>
