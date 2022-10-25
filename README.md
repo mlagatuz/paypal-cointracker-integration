@@ -22,7 +22,6 @@ I'm using this exercise to help me with practice Data Structures and Algorithms 
 ***Overall algorithm***
 1. Ingest entire CSV
 2. format_headers
-<br>
 
 ***format_headers algorithm***
 - Drop first row (Paypal inserts disclaimer)
