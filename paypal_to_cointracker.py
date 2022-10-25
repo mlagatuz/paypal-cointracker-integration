@@ -9,7 +9,7 @@ class Transactions_Integration:
 
     #def format_time(self) -> None:
 
-    def format_headers(self):
+    def format_headers(self) -> None:
         # Drop unnecessary headers
         self.transaction_table.drop({'Transaction Type', 'Market Value (USD)'}, axis=1, inplace=True)
 
