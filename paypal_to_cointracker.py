@@ -7,9 +7,14 @@ class Transactions_Integration:
     def __init__(self, transaction_table = None) -> None:
         self.transaction_table = transaction_table
 
-    #def transform_csv(self) -> None:
-        #self.format_headers()
-        #self.format_date()
+    def transform_csv(self) -> None:
+        self.format_headers()
+
+        # shape[0] accounts for NaN values
+        # probably unnecessary, since 'Date' is a string
+        for row in range(self.transaction_table.shape[0]): 
+            old_date = self.transaction_table.at[row, 'Date']
+            self.transaction_table.at[row, 'Date'] = self.format_date(old_date)
 
     def format_date(self, date) -> pd.DataFrame:
         datetime_old = dt.strptime(date, '%a, %d %b %Y %H:%M:%S %Z')
