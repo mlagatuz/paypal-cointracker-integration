@@ -1,4 +1,6 @@
 import pandas as pd
+from datetime import datetime as dt
+import pytz
 
 class Transactions_Integration:
 
@@ -9,7 +11,9 @@ class Transactions_Integration:
         #self.format_headers()
         #self.format_date()
 
-    #def format_date(self, date) -> None:
+    def format_date(self, date) -> pd.DataFrame:
+        datetime_old = dt.strptime(date, '%a, %d %b %Y %H:%M:%S %Z')
+        return dt.strftime(datetime_old.replace(tzinfo=pytz.utc), '%m/%d/%Y %H:%M:%S %Z')
 
     def format_headers(self) -> None:
         # Drop unnecessary headers
