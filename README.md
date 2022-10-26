@@ -32,8 +32,7 @@ Utilizing this exercise as practice for Data Structures and Algorithms (DSA's), 
 -   format_date
 ```
 
-*NOTE for transform_csv: shape[0] provides number of rows for DataFrame, and accounts for NaN values*<br>
-*Probably unnecessary, since 'Date' is a string; maybe an edge case; let me think about that*<br>
+*For transform_csv: shape[0] provides number of rows for DataFrame, and accounts for NaN values; Probably unnecessary, since 'Date' is a string; maybe an edge case; let me think about that*<br>
 
 ***format_headers algorithm*** <br>
 ```
