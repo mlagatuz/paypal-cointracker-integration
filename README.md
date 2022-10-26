@@ -15,23 +15,40 @@ This [link](https://community.cointracker.io/t/convert-any-csv-into-the-cointrac
 - Group data by transaction type (Buy, Sell, Swap)
 - Convert data by transaction type
 
-## Workflow
+## Notes for myself
 
-I'm using this exercise to help me with practice Data Structures and Algorithms (DSA's), coding in Python, and working a project end-to-end. I grabbed my whiteboard and came up with this algorithm:
+Utilizing this exercise as practice for Data Structures and Algorithms (DSA's), coding in Python, and working a project end-to-end. I grabbed my whiteboard and came up with this algorithm:
 
-***Overall algorithm***
-1. Ingest entire CSV
-2. format_headers
+***Overall algorithm*** <br>
+```
+- Ingest entire CSV
+- Transform CSV
+```
 
-***format_headers algorithm***
+***transform_csv*** <br>
+```
+- format_headers
+- for row in range(number_of_rows)
+-   format_date
+```
+
+***format_headers algorithm*** <br>
+```
 - Drop first row (Paypal inserts disclaimer)
 - Format Time
 - Drop "Transaction Type" column
 - Format Headers
 - Drop "Market Value" column
+```
+
+***format_date algorithm*** <br>
+```
+- create datetime object from string
+- convert string to new datetime object
+- return new datetime object
+```
 
 
-## Notes for myself
 *PayPal CSV headers:* <br>
     
     DateTime, Transaction Type, Asset In (Quantity), Asset In (Currency), Asset Out (Quantity), Asset Out (Currency), Transaction Fee (Quantity), Transaction Fee (Currency), Market Value (USD)
