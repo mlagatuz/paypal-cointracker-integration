@@ -7,9 +7,9 @@ class Transactions_Integration:
 
     #def transform_csv(self) -> None:
         #self.format_headers()
-        #self.format_time()
+        #self.format_date()
 
-    #def format_time(self) -> None:
+    #def format_date(self, date) -> None:
 
     def format_headers(self) -> None:
         # Drop unnecessary headers
