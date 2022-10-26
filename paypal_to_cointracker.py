@@ -10,8 +10,7 @@ class Transactions_Integration:
     def transform_csv(self) -> None:
         self.format_headers()
 
-        # shape[0] accounts for NaN values
-        # probably unnecessary, since 'Date' is a string
+        # shape[0] provides number of rows, and accounts for NaN values
         for row in range(self.transaction_table.shape[0]): 
             old_date = self.transaction_table.at[row, 'Date']
             self.transaction_table.at[row, 'Date'] = self.format_date(old_date)
